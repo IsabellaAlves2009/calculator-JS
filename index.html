@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <input type="text" name="" value="00" id="result">
+            <div class="operations">
+                <div class="buttons-numbers">
+                    <button onclick="inserir('1')">1</button>
+                    <button onclick="inserir('2')">2</button>
+                    <button onclick="inserir('3')">3</button>
+                    <button onclick="inserir('4')">4</button>
+                    <button onclick="inserir('5')">5</button>
+                    <button onclick="inserir('6')">6</button>
+                    <button onclick="inserir('7')">7</button>
+                    <button onclick="inserir('8')">8</button>
+                    <button onclick="inserir('9')">9</button>
+                    <button onclick="inserir('0')">0</button>
+                    <button onclick="inserir(',')">,</button>
+                </div>
+                <div class="buttons-operations">
+                    <button id="btn-soma" onclick="inserir('+')">+</button>
+                    <button id="btn-subtacao" onclick="inserir('-')">-</button>
+                    <button id="btn-multiplicacao" onclick=" inserir('x')">x</button>
+                    <button id="btn-divisao" onclick="inserir('÷')">÷</button>
+                    <button id="btn-potenciacao" onclick=" inserir('^')">x<sup>y</sup></button>
+                    <button id="btn-radiacao" onclick="inserir('√')">√</button>
+                    <button id="btn-result" onclick="operacao()">=</button>
+                    <button id="btn-clearall" onclick="limpar()">AC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

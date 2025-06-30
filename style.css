@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    background-image: linear-gradient(to top, #807ECE, #807ECE);
+    color: #fff;
+}
+
+#calculator{
+    margin: 60px auto;
+    background-color: #2D2A37;
+    width: 30%;
+    height: 70vh;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#result{
+    display: flex;
+    margin: 20px auto;
+    background-color: #2D2A37;
+    border: none;
+    width: 80%;
+    height: 20%;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    justify-content: center;
+}
+
+#result:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.operations{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    background-color: #2c2935;
+    padding: 10px;
+}
+
+.buttons-numbers {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 12px;
+}
+
+.buttons-operations{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    flex-direction: column;
+    gap: 12px;
+}
+
+.buttons-numbers button, .buttons-operations button{ 
+    color: #EBEBEB;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    font-size: 24px;
+    border: none;
+}
+
+.buttons-numbers button{
+    background-image: linear-gradient(to top,#2D2A37, rgba(0,0,0, 0.9));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.buttons-operations button{
+    background-image: linear-gradient(to top,#7F45E2, rgba(70, 40, 120, 1));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.buttons-operations button:nth-of-type(5) sup{
+    font-size: 15px;
+}
+
+.buttons-numbers button:nth-of-type(10){
+    width: 134px;
+    height: 64px;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.buttons-numbers button:hover{
+    background-image: linear-gradient(to top, #2D2A37, rgba(0,0,0, 0.8));
+}
+
+.buttons-operations button:hover{
+    background-image: linear-gradient(to top,#7F45E2, rgba(70, 40, 120, 0.9));
+}
+
+#btn-result{
+    background-image: none;
+    background-color: #7F45E2;
+}
+
