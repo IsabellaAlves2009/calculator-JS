@@ -41,13 +41,12 @@ body{
 }
 
 .operations{
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
     background-color: #2c2935;
-    padding: 10px;
 }
 
 .buttons-numbers {
@@ -100,6 +99,10 @@ body{
 
 .buttons-operations button:hover{
     background-image: linear-gradient(to top,#7F45E2, rgba(70, 40, 120, 0.9));
+}
+
+.buttons-operations button:active, .buttons-operations button:focus{
+    outline: none;
 }
 
 #btn-result{
